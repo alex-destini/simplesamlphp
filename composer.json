@@ -32,6 +32,10 @@
         },
         "files": ["tests/_autoload_modules.php"]
     },
+    "repositories": [{
+        "type": "git",
+        "url": "git@github.com:alex-destini/saml2.git"
+    }],
     "require": {
         "php": ">=7.1 <8.0",
         "ext-SPL": "*",
