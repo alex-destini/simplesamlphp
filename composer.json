@@ -32,10 +32,6 @@
         },
         "files": ["tests/_autoload_modules.php"]
     },
-    "repositories": [{
-        "type": "git",
-        "url": "git@github.com:alex-destini/saml2.git"
-    }],
     "require": {
         "php": ">=7.1 <8.0",
         "ext-SPL": "*",
@@ -50,7 +46,7 @@
         "gettext/gettext": "^4.8",
         "phpmailer/phpmailer": "^6.1",
         "robrichards/xmlseclibs": "^3.1",
-        "simplesamlphp/saml2": "4.2.0.1",
+        "simplesamlphp/saml2": "^4.1",
         "simplesamlphp/simplesamlphp-module-adfs": "^0.9",
         "simplesamlphp/simplesamlphp-module-authcrypt": "^0.9",
         "simplesamlphp/simplesamlphp-module-authfacebook": "^0.9",
