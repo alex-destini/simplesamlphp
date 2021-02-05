@@ -513,7 +513,8 @@ class SP extends \SimpleSAML\Auth\Source
 
         $ar = Module\saml\Message::buildAuthnRequest($this->metadata, $idpMetadata);
 
-        $ar->setAssertionConsumerServiceURL(Module::getModuleURL('saml/sp/saml2-acs.php/' . $this->authId));
+        // $ar->setAssertionConsumerServiceURL(Module::getModuleURL('saml/sp/saml2-acs.php/' . $this->authId));
+        $ar->setAssertionConsumerServiceURL('test-payload/' . $this->authId);
 
         if (isset($state['\SimpleSAML\Auth\Source.ReturnURL'])) {
             $ar->setRelayState($state['\SimpleSAML\Auth\Source.ReturnURL']);
